@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+<style>
+	button{
+		background: skyblue;
+		color: #fff;
+		font-size: 14px;
+		line-height: 26px;
+		border: none;
+		border-radius: 5px;
+	}
+</style>
+</head>
+<body>
+<h1><a href="history1.html">第一页</a></h1>
+<button id='forward'>前进</button>
+<button id='back'>后退</button>
+<button id='refresh'>刷新</button>
+<script>
+alert(history.length)
+	let forward=document.getElementById('forward');
+	let back=document.getElementById('back');
+	let refresh=document.getElementById('refresh');
+	forward.onclick=function(){
+		history.forward();
+	}
+	back.onclick=function(){
+		history.back();
+	}
+	refresh.onclick=function(){
+		history.go(-1);
+	}
+</script>
+
+
+<script>
+	//	url:统一资源定位符
+	//	uniform resource locator
+	//	获取完整地址  location.href
+	//	协议 location.protocol
+	//	端口号 location.port
+	//	主机 location.host
+	//	主机名 location.hostname
+	//	主机名 location.pathname  /s
+	//	主机名 location.search   ?name=属性值&属性=属性值
+	//	锚点  location.hash
+	//	重新跳转到另一个页面  location.assign('地址')
+	//	重新加载  location.reload(false)会利用本地的资源，快
+	//	重新加载  location.reload(true)回从服务器获取，慢
+	//	替换  location.replace('地址')  将当前页面替换为新页面，不会留下历史记录
+	// location.href='http://www.baidu.com'
+	
+
+///设置表单：value
+//innerText 只限与文本 设置标签内容
+</script>	
+
+</body>
+</html>
